@@ -26,6 +26,7 @@
     width: 9cm;
     margin-left: auto;
     margin-right: auto;
+    height: 12cm;
 }
 .checkout-heading{
     text-align: left;
@@ -53,6 +54,16 @@
 }
 .checkout-empty-cart{
     height: 12cm;
+}
+
+@media (max-width: 900px) {
+    .checkout-header-text{
+        font-size: 0.67cm;
+    }
+    .checkout-header{
+        font-size: 0.9cm;
+        letter-spacing: 1px;
+    }
 }
 
 @media (max-width: 500px) {

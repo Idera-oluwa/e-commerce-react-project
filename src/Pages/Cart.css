@@ -334,6 +334,9 @@ display: none;
 .cart-amount-btn{
     font-size: 0.3cm;
 }
+.amount-section{
+    margin-left: -1cm;
+}
 .plus{
     margin-left: -1cm;
     }
@@ -341,13 +344,13 @@ display: none;
     margin-right: -1cm;
     }
     .cart-trash-button{
-        margin-left: -0.7cm;
+        margin-left: -1.7cm;
     }
     .continue-shopping{
-        font-size: 0.35cm;
+        font-size: 0.3cm;
     }
     .clear-shopping-cart{
-        font-size: 0.4cm;
+        font-size: 0.35cm;
     }
     .cart-total-checkout-container{
         width: 100%;

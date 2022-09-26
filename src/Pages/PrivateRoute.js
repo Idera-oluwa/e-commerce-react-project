@@ -6,7 +6,7 @@ const PrivateRoute =({children})=>{
     const {myUser} = useGlobalContext();
     return(
         <div>
-      {myUser? children : <Navigate to='/'/>}
+      {myUser? children : <Navigate to='/cart'/>}
         </div>
     )
 }
