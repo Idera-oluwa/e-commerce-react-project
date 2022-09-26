@@ -1,0 +1,135 @@
+.sidebar-logo-icon{
+display: flex;
+flex-direction: row;
+margin-top: 0.5cm;
+}
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top: 0%;
+}
+.show{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    top: 0%;
+    transition: 0.5s all linear;
+    z-index: 1000;
+}
+.sidebar{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    top: 0%;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: 0.5s all linear;
+}
+.times-icon{
+    display: block;
+    margin-left: auto;
+    margin-right: 5%;
+    width: 1cm;
+    height: 1cm;
+    color: rgb(194, 4, 4);
+}
+.nav-home{
+    font-size: 0.5cm;
+    color: rgb(53, 33, 85);
+    letter-spacing: 0.05cm;
+    margin-bottom: 0%;
+}
+.nav-about{
+    font-size: 0.5cm;
+    color: rgb(53, 33, 85);
+    letter-spacing: 0.05cm;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+.nav-products{
+    font-size: 0.5cm;
+    color: rgb(53, 33, 85);
+    letter-spacing: 0.05cm;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+.nav-checkout{
+    font-size: 0.5cm;
+    color: rgb(53, 33, 85);
+    letter-spacing: 0.05cm;
+    margin-top: 0%;
+}
+.first-side-links{
+    text-align: left;
+    width: 100%;
+    line-height: 1.7cm;
+}
+.links{
+    width: 100%;
+    padding-left: 0.9cm;
+    transition: 0.25s all linear;
+}
+.links:hover{
+    background-color: rgba(225, 225, 243, 0.384);
+    padding-left: 1.2cm;
+}
+.second-side-links{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 0.65cm;
+    justify-content: center;
+}
+.nav-cart-section-container{
+    display: flex;
+    flex-direction: row;
+}
+.nav-cart-icon-container{
+    display: flex;
+    flex-direction: row;
+}
+.nav-cart-count{
+    position: absolute;
+    height: 0.65cm;
+}
+.nav-cart-count-text{
+    background-color: rgb(170, 82, 82);
+    color: white;
+    font-size: 15px;
+    /*padding:0.4px 3px;*/
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: 0;
+    margin-left: 0.45cm;
+    margin-top: 0.5cm;
+}
+.nav-login{
+    font-weight: 400;
+    color: rgb(28, 2, 70);
+    margin-left: 0.6cm;
+}
+.nav-cart{
+    font-weight: 400;
+    color: rgb(29, 2, 73);
+}
+@media screen and (max-width:500px){
+    .nav-home, .nav-about, .nav-products, .nav-checkout{
+        font-size: 0.4cm;
+    }
+    .first-side-links{
+        line-height: 1.5cm;
+    }
+    .nav-login{
+        font-size:0.7cm;
+    }
+    .nav-cart{
+        font-size: 0.7cm;
+    }
+}

@@ -1,0 +1,92 @@
+.about-header{
+    background-color: rgb(235, 217, 224);
+    height: 3.2cm;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.about-header-text{
+    width:87%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 0.9cm;
+    color:rgb(73, 63, 45);
+}
+.span{
+    color:rgb(122, 105, 75);
+}
+.span:hover{
+    color:rgb(73, 63, 45);
+}
+.about-content{
+margin-top: 2.5cm;
+width: 87%;
+display: grid;
+gap: 4rem;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 2.4cm;
+}
+.about-image{
+    width: 100%;
+    display: block;
+    height: 500px;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.about-text-container{
+    text-align: left;
+    line-height: 2;
+    max-width: 45em;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.about-heading{
+font-size: 0.9cm;
+margin-top: -1.5cm;
+color: rgb(45, 42, 54);
+margin-bottom: 0%;
+}
+.about-heading:after{
+content: "";
+display: block; /* This will put the pseudo element on its own line. */
+margin-right: auto; /* This will center the border. */
+width: 2.8cm; /* Change this to whatever width you want. */
+padding-top: 0px; 
+border-bottom: 0.13cm solid rgb(155, 118, 24);
+}
+.about-paragraph{
+font-size: 0.4cm;
+line-height: 0.8cm;
+color: rgb(132, 126, 150);
+}
+@media (min-width: 992px) {
+    .about-content{
+        grid-template-columns: 1fr 1fr;
+    }
+    .about-paragraph{
+        font-size: 0.46cm;
+    }
+    .about-heading{
+        font-size: 1.2cm;
+    }
+  }
+
+  @media (max-width: 900px) {
+  .about-header-text{
+    font-size: 0.67cm;
+    width: 95%;
+  }
+  .about-content{
+      width: 95%;
+  }
+  }
+  @media (max-width: 500px) {
+.about-paragraph{
+    font-size: 0.38cm;
+}
+  }

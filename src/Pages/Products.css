@@ -1,0 +1,45 @@
+.products-container{
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    }
+.products-header{
+    background-color: rgb(235, 217, 224);
+    height: 3.2cm;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.products-header-text{
+    width:87%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 0.9cm;
+    color:rgb(73, 63, 45);
+    text-transform: capitalize;
+}
+.span{
+    color:rgb(122, 105, 75);
+}
+.span:hover{
+    color:rgb(73, 63, 45);
+}
+.sort-productlist{
+width: 100%;
+}
+@media (max-width: 900px) {
+.products-container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.products-header-text{
+    font-size: 0.67cm;
+    width: 95%;
+  }
+}

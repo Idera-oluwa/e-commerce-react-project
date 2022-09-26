@@ -1,0 +1,65 @@
+.sort-container{
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 1.5cm;
+  column-gap: 2rem;
+}
+.sort-hr{
+    text-align: left;
+    width: 97%;
+    color: rgb(90, 83, 109);
+}
+.button-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem
+}
+.sort-button{
+    background-color: transparent;
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 1.9rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.active{
+    background-color: black;
+    color: white;
+}
+.sort-products-length{
+    font-size: 0.45cm;
+    color: rgb(90, 83, 109);
+}
+.sort-label{
+    font-size: 0.45cm;
+    margin-right: 0.5cm;
+    color: rgb(90, 83, 109);
+}
+.sort-select{
+    font-size: 0.45cm;
+    text-transform: capitalize;
+    border: none;
+}
+@media screen and (max-width:900px){
+.sort-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sort-products-length{
+    font-size: 0.4cm;
+}
+}
+@media screen and (max-width:900px){
+    .sort-label, .sort-select{
+font-size: 0.4cm;
+    }
+}

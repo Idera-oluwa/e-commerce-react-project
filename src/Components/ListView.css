@@ -1,0 +1,75 @@
+.list-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 1cm;
+}
+.list-info-container{
+    display: flex;
+    font-size: 0.45cm;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 0.7cm;
+}
+.list-image{
+    display: block;
+    min-width: 300px;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.list-name{
+    text-transform: capitalize;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: rgb(54, 50, 66);
+}
+.list-price{
+    margin-top: 0%;
+    margin-bottom: 0%;  
+    color:rgb(182, 134, 63);
+}
+.list-desc{
+    color: rgb(90, 83, 109);
+}
+.list-button{
+    width: 1.7cm;
+    height: 0.55cm;
+    font-size: 10px;
+    background-color: rgb(221, 169, 90);
+    border: none;
+    transition: 0.2s all linear;
+    color: white;
+    margin-bottom: 1rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.list-button:hover{
+    background-color: rgb(226, 194, 142);
+    color: black;
+}
+
+@media screen and (max-width:900px){
+    .list-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .list-info-container{
+        margin-top: 0cm;
+    }
+    .list-image{
+        margin-bottom: 0%;
+    }
+    .list-info-container{
+        width: 95%;
+        line-height: 0.8cm;
+        font-size: 0.4cm;
+    }
+}
