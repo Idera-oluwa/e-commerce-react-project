@@ -71,7 +71,7 @@ const Cart =()=>{
                         </div>
                         </div>
                         <p className='cart-price'>₦{price/10}9</p>
-                        <div className='amount-section'>
+                        <div className='cart-amount-section amount-section'>
                      <button type='button' className='cart-amount-btn minus' onClick={()=>decrease(id)}>
                      <FaMinus />
                      </button>
