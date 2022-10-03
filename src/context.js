@@ -58,7 +58,10 @@ fetchUrl();
     if (name === 'shipping') {
       value = e.target.checked
     }
-    setFilters({...filters,[name]:value.toLowerCase()})
+    if (name === 'text'){
+      value = e.target.value.toLowerCase()
+    }
+    setFilters({...filters, [name]:value})
     }
 
     const filterProducts =()=>{
@@ -68,7 +71,6 @@ fetchUrl();
       tempProducts = tempProducts.filter((product) =>
         product.name.toLowerCase().startsWith(text)
       )
-      console.log(text);
     }
     if (category !== 'all') {
       tempProducts = tempProducts.filter(
@@ -123,7 +125,6 @@ fetchUrl();
    handleSort();
    filterProducts();
     },[sort,filters])
-    console.log(filters.max_price)
     const clearFilters=()=>{
       setFilters({text:'', category:'all', company:'all', color: 'all',shipping:false,price:309999})
     }

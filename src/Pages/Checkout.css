@@ -61,8 +61,11 @@
         font-size: 0.67cm;
     }
     .checkout-header{
-        font-size: 0.9cm;
+        font-size: 0.6cm;
         letter-spacing: 1px;
+    }
+    .checkout-text{
+        font-size: 0.4cm;
     }
 }
 
