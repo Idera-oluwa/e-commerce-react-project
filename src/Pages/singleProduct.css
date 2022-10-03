@@ -63,6 +63,7 @@ grid-template-columns: repeat(2,1fr)
     object-fit: cover;
    height: 500px;
    max-width: 100%;
+   min-width: 100%;
 }
 .gallery{
     margin-top: 1rem;
@@ -258,6 +259,9 @@ flex-direction: row;
     }
     .gallery-image {
         height: 50px;
+    }
+    .amount-section{
+        margin-left:0rem;
     }
   }
   @media (min-width: 992px) {

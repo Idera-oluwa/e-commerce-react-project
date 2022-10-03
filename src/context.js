@@ -14,7 +14,7 @@ const AppProvider = ({children}) =>{
     const [myUser, setMyUser] = useState(null)
     const [sort, setSort] = useState('name-a');
     const [error, setError] = useState(false)
-    const [filters, setFilters] = useState({text:'', category:'all', company:'all', color: 'all',
+    const [filters, setFilters] = useState({text:''.toLowerCase(), category:'all', company:'all', color: 'all',
     min_price: 0,
     max_price: 0,
     price: 0,
@@ -58,7 +58,7 @@ fetchUrl();
     if (name === 'shipping') {
       value = e.target.checked
     }
-    setFilters({...filters,[name]:value})
+    setFilters({...filters,[name]:value.toLowerCase()})
     }
 
     const filterProducts =()=>{
@@ -68,6 +68,7 @@ fetchUrl();
       tempProducts = tempProducts.filter((product) =>
         product.name.toLowerCase().startsWith(text)
       )
+      console.log(text);
     }
     if (category !== 'all') {
       tempProducts = tempProducts.filter(
@@ -122,8 +123,9 @@ fetchUrl();
    handleSort();
    filterProducts();
     },[sort,filters])
+    console.log(filters.max_price)
     const clearFilters=()=>{
-      setFilters({text:'', category:'all', company:'all', color: 'all',shipping:false,price:filters.max_price})
+      setFilters({text:'', category:'all', company:'all', color: 'all',shipping:false,price:309999})
     }
     const {isAuthenticated,loginWithRedirect,logout,user,isLoading} = useAuth0();
     useEffect(()=>{

@@ -1,14 +1,15 @@
 import React from 'react';
 import './Hero.css'
+import {Link} from 'react-router-dom';
 const Hero =()=>{
 return(
-    <div className='hero-container'v>
+    <div className='hero-container'>
         <div className='hero-message'>
             <h1 className='hero-message-heading'>Design Your Comfort Zone</h1>
             <p className='hero-message-text'>Qui magna sint esse excepteur consequat incididunt enim laboris aliqua ea minim consequat officia enim.
                  Nostrud laborum aliqua ullamco qui duis anim sit sint consequat ex non Lorem.
                   Laborum est dolore nisi velit.</p>
-                  <button className='hero-button'>SHOP NOW</button>
+                  <Link to='/products'><button className='hero-button'>SHOP NOW</button></Link>
         </div>
         <div className='hero-images-total-container'>
         <div className='hero-images-background'></div>

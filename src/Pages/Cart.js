@@ -97,7 +97,7 @@ const Cart =()=>{
                  <h3 className='cart-total-subtotal'>Subtotal: <span>₦{totalAmount/10}9</span></h3>
                  <p className='shiipping-fee'>Shipping Fee: <span>₦{shippingFee}</span></p>
                  <hr className='cart-total-header'/>
-                 <h1 className='order-total'>Order Total: <span>₦{(totalAmount+shippingFee)/10}9</span></h1>
+                 <h1 className='order-total'>Order Total: <span>₦{(((totalAmount/10)+0.09)+shippingFee).toFixed(2)}</span></h1>
                  </div>
              </div>
             {myUser?  <Link to='/checkout'><button className='cart-checkout'>proceed to checkout</button></Link> :

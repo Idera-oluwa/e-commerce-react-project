@@ -159,4 +159,12 @@ margin-left: 0%;
         height: 0.9cm;
         font-size: 0.4cm;
     }
+    .hero-button:hover{
+        font-size: 0.4cm;
+    }
+}
+@media screen and (max-width:400px){
+.hero-message-heading{
+    width: 85%;
+}
 }

@@ -12,7 +12,7 @@ function Subscribe() {
             action="https://formspree.io/f/xnqrdznj"
               method="POST"
               >
-                <input type='email' className='subscribe-input' placeholder='Enter Email' name='_replyto'/>
+                <input type='email' className='subscribe-input' placeholder='Enter Email' name='_replyto' required/>
                 <button type='submit' className='subscribe-button'>Subscibe</button>
             </form>
             </div>

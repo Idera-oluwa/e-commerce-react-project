@@ -18,7 +18,7 @@ const CartProvider =({children})=>{
     const [cart,setCart] = useState(getLocalStorage());
     const [totalItems, setTotalItems] = useState(0);
     const [totalAmount, setTotalAmount] = useState(0);
-    const [shippingFee, setShippingFee] = useState(534);
+    const [shippingFee, setShippingFee] = useState(5.34);
     useEffect(() => {
       localStorage.setItem('cart', JSON.stringify(cart))
       handleAmountChange();
@@ -76,12 +76,12 @@ const handleAmountChange =()=>{
       const config = {
         public_key: "FLWPUBK-c9b551b5c6c576876eae06f908f14f32-X",
         tx_ref: Date.now(),
-        amount: `${(totalAmount+shippingFee)/10}9`,
+        amount: `${(((totalAmount/10)+0.09)+shippingFee).toFixed(2)}`,
         currency: "NGN",
         payment_options: "card, mobilemoneyghana, ussd",
         redirect_url: "https://glaciers.titanic.com/handle-flutterwave-payment",
         meta: {
-          consumer_id: `zidera-ecommerce-app${user && user.name}${cart.name}${(totalAmount+shippingFee)/10}9`,
+          consumer_id: `zidera-ecommerce-app${user && user.name}${cart.name}${(((totalAmount/10)+0.09)+shippingFee).toFixed(2)}`,
           consumer_mac: "92a3-912ba-1192a",
         },
         customer: {

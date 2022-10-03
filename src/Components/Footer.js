@@ -4,7 +4,7 @@ import './footer.css'
 function Footer() {
     return (
         <footer className='footer-container'>
-            <p className='footer-text'>© 2020 <span className='footer-span'>ComfySloth</span> All rights reserved</p>
+            <p className='footer-text'>© {new Date().getFullYear()} <span className='footer-span'>ComfySloth</span> All rights reserved</p>
         </footer>
     )
 }

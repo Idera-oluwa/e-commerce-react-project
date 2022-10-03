@@ -21,7 +21,7 @@ const Checkout =()=>{
                   <Link to='/products'><button className='empty-checkout-button'>FILL IT</button></Link>
               </div> : <div className='checkout-container'>
               <h1 className='checkout-heading'>Hello, {user&& user.name}</h1>
-              <p className='checkout-text'>Your total is ₦{(totalAmount+shippingFee)/10}9</p>
+              <p className='checkout-text'>Your total is ₦{(((totalAmount/10)+0.09)+shippingFee).toFixed(2)}</p>
               <button className='cart-checkout' onClick={() => {
           handleFlutterPayment({
             callback: (response) => {
