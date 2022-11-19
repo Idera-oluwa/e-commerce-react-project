@@ -10,6 +10,7 @@
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+    letter-spacing: 2px;
     justify-content: center;
 }
 .second-nav-links{
@@ -17,7 +18,8 @@
     flex-direction: row;
     margin-left: auto;
     margin-right: 2cm;
-    font-size: 0.65cm;
+    font-size: 0.55cm;
+    letter-spacing: 1px;
     
 }
 .cart{
@@ -38,17 +40,17 @@
 }
 .cart-count{
     position: absolute;
-    height: 0.65cm;
+    height: 0.6cm;
     right: 0; 
 }
 .cart-count-text{
     margin-bottom: 0.6cm;
     background-color: rgb(170, 82, 82);
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     /*padding:0.4px 3px;*/
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     left: 0;
     margin-top: 0.6cm;
@@ -60,16 +62,16 @@
     cursor: pointer;
 }
 .home{
-    font-size: 0.5cm;
+    font-size: 0.4cm;
     color: rgb(28, 2, 70);
 }
 .about{
-    font-size: 0.5cm;
+    font-size: 0.4cm;
     margin-left: 0.9cm;
     color: rgb(28, 2, 70);
 }
 .products{
-    font-size: 0.5cm;
+    font-size: 0.4cm;
     margin-left: 0.9cm;
     color: rgb(28, 2, 70);
 }
@@ -81,11 +83,11 @@
 .link:hover{
     content: ""; /* This is necessary for the pseudo element to work. */    
     display: block;  
-    border-bottom: 0.08cm solid goldenrod;
+    border-bottom: 0.06cm solid goldenrod;
   }
 .logo{
-    height: 1.5cm;
-    margin-left: 5%;
+    height: 1.35cm;
+    margin-left: 7%;
 }
 .bars-icon{
     display: none;

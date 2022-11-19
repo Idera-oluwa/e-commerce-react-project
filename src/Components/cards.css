@@ -5,7 +5,8 @@
     padding-top: 1cm;
 }
 .cards-text-container{
-    width: 90%;
+    width: 90vw;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -14,13 +15,14 @@
 }
 .cards-heading{
     width: 28%;
-    font-size: 1cm;
+    font-size: 0.85cm;
+    letter-spacing: 2px;
     text-align: left;
 }
 .cards-paragraph{
 width: 50%;
 margin-left: auto;
-font-size: 18px;
+font-size: 15px;
 line-height: 1cm;
 text-align: left;
 margin-top: 0.7cm;
@@ -34,8 +36,8 @@ margin-top: 0.7cm;
     margin-top: 1.5cm;
 }
 .icons{
-    font-size: 1cm;
-    padding: 0.5cm;
+    font-size: 0.8cm;
+    padding: 0.4cm;
     background-color: rgb(228, 215, 195);
     border-radius: 50%;
 }
@@ -49,10 +51,12 @@ margin-top: 0.7cm;
     border-bottom-left-radius: 5px;
 }
 .card-heading{
-font-size: 28px;
+font-size: 23px;
+letter-spacing: 2px;
 }
 .card-text{
-    font-size: 19px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
 }
 @media screen and (max-width:1350px){
     .cards-container{

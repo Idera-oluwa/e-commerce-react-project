@@ -14,8 +14,9 @@ font-weight: 500;
 background-color: rgb(201, 156, 60);
 color: white;
 border: none;
-font-size: 0.4cm;
-padding: 0.08cm;
+font-size: 0.35cm;
+border-radius: 5px;
+padding: 0.08cm 0.5cm;
 }
 .error-button:hover{
     color: black;

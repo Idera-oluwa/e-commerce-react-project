@@ -1,6 +1,7 @@
 .subscribe-container{
-    margin-top: 7.5cm;
-    width: 90%;
+    margin-top: 5.5cm;
+    width: 90vw;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 4cm;
@@ -8,32 +9,33 @@
 .subscribe-heading{
     text-align: left;
     width: 90%;
-    font-size: 1cm;
+    font-size: 0.9cm;
     color: rgb(54, 50, 66);
+    margin-bottom: 0%;
 }
 .subscribe-text{
     text-align: left;
-    width: 33%;
-    font-size: 17px;
+    width: 45%;
+    font-size: 16px;
     color:rgb(132, 126, 150);
     line-height: 1cm;
 }
 .subscribe-input-div{
-    width: 65%;
+    width: 55%;
     margin-top: 1.5cm;
     margin-left: auto;
 }
 .subscribe-input{
 width: 10cm;
-height: 1cm;
-border-color: black;
-border-width: 3px;
+height: 0.9cm;
+border: black 2px solid;
+font-size: 0.4cm;
 }
 .subscribe-button{
 width: 3.2cm;
-height: 1.2cm;
+height: 1.1cm;
 border-color: black;
-border-width: 3px;
+border-width: 2px;
 border-left: none;
 background-color: rgb(190, 141, 68);
 font-size: 18px;
@@ -87,7 +89,7 @@ transition: 0.25s linear all;
         line-height: 0.85cm;
     }
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:550px){
     .subscribe-heading{
         font-size: 0.7cm;
         font-weight: 650;
