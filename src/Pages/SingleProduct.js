@@ -15,7 +15,7 @@ function SingleProduct() {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(false)
     const {id} = useParams();
-    const single_url=`https://course-api.com/react-store-single-product?id=${id}`
+    const single_url=`https://sp-server-y82x.onrender.com/?id=${id}`
     const fetchProduct =async()=>{
       setLoading(true)
     try{
