@@ -14,8 +14,8 @@ return(
         <div className='hero-images-total-container'>
         <div className='hero-images-background'></div>
         <div className='hero-images-container'>
-        <img className='hero-main-image' src='https://react-course-comfy-sloth-store.netlify.app/static/media/hero-bcg.a876f19f.jpeg' alt='Hero image'/>
-        <img className='hero-small-image' src='https://react-course-comfy-sloth-store.netlify.app/static/media/hero-bcg-2.78991864.jpeg'/>
+        <img className='hero-main-image' src='https://react-course-comfy-sloth-store.netlify.app/static/media/hero-bcg.a876f19f6786a3aca992.jpeg' alt='Hero image'/>
+        <img className='hero-small-image' src='https://react-course-comfy-sloth-store.netlify.app/static/media/hero-bcg-2.789918645915c8acb36f.jpeg'/>
         </div>
     </div>
     </div>
