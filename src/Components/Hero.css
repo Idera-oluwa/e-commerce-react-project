@@ -1,0 +1,176 @@
+.hero-container{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-message{
+    width: 43%;
+    text-align: left;
+    margin-top: 2cm;
+    margin-left: 0.5cm;
+    letter-spacing: 0.5px;
+}
+.hero-images-background{
+    background-color: rgb(248, 237, 201);
+    width: 9cm;
+    height: 9cm;
+    position: absolute;
+    margin-right: 32%;
+    margin-top: 2.5cm;
+    right: 0;
+}
+.hero-images-total-container{
+    width: 46%;
+    position: relative;
+    margin-left: auto;
+    height: 16cm;
+    margin-top: 0.5cm;
+}
+.hero-main-image{
+    width: 11.7cm;
+    height: 14.5cm;
+    position: absolute;
+    right: 0;
+    margin-right: 6%;
+}
+.hero-small-image{
+    position: absolute;
+    width: 6.7cm;
+    height: 4.5cm;
+    left: -0.5cm;
+    bottom: 0%;
+    margin-bottom: 1.5cm;
+}
+.hero-message-heading{
+    width: 80%;
+   font-size: 1.25cm;
+   letter-spacing: 2px;
+   line-height: 1.5cm;
+   color: rgb(54, 50, 66);
+}
+.hero-message-text{
+    font-size: 0.5cm;
+    color: rgb(132, 126, 150);
+    line-height: 1cm;
+}
+.hero-button{
+    width: 4cm;
+    height: 1.3cm;
+    background-color: rgb(221, 169, 90);
+    border: none;
+    transition: 0.2s all linear;
+    color: white;
+    font-size: 0.45cm;
+    margin-top: 0.5cm;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.hero-button:hover{
+    background-color: rgb(226, 194, 142);
+    color: black;
+    font-size: 0.5cm;
+}
+@media screen and (max-width:1350px){
+.hero-images-background{
+    margin-right: 33%;
+}
+.hero-images-total-container{
+    width: 52%;
+}
+.hero-message{
+margin-left: 0%;
+}
+.hero-container{
+    width: 95%;
+}
+}
+@media screen and (max-width:1350px){
+    .hero-images-total-container{
+        width: 27%;
+    }
+    .hero-small-image{
+        left: -7.5cm;
+    }
+    .hero-images-background{
+        margin-right: 55%;
+    }
+    .hero-container{
+        width: 97%;
+    }
+}
+@media screen and (max-width:1150px){
+    .hero-message-heading{
+        font-size: 1.4cm;
+    }
+    .hero-small-image{
+        left: -8cm;
+    }
+    .hero-images-background{
+        margin-right: 57%;
+    }
+}
+@media screen and (max-width:1120px){
+    .hero-images-total-container{
+        display: none;
+    }
+    .hero-message{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-message-heading{
+        width: 55%;
+        line-height: 1.5cm;
+        margin-bottom: 0.3cm;
+    }
+    .hero-message-text{
+        font-size: 0.5cm;
+        margin-top: 0%;
+    }
+    .hero-button{
+        width: 3.2cm;
+        height: 1cm;
+        margin-bottom: 1cm;
+    }
+}
+@media screen and (max-width:900px){
+    .hero-message-heading{
+        font-size: 1.2cm;
+        width: 65%;
+    }
+    .hero-message{
+        width: 95%;
+        margin-top: 0.1cm;
+    }
+}
+@media screen and (max-width:500px){
+    .hero-message-heading{
+    font-size: 2.5rem;
+    width: 75%;
+    }
+    .hero-message{
+        margin-top:1.5cm;
+    }
+    .hero-message-text{
+        font-size: 0.45cm;
+        line-height: 0.85cm;
+    }
+    .hero-button{
+        width: 2.9cm;
+        height: 0.9cm;
+        font-size: 0.4cm;
+    }
+    .hero-button:hover{
+        font-size: 0.4cm;
+    }
+}
+@media screen and (max-width:400px){
+.hero-message-heading{
+    width: 85%;
+}
+}

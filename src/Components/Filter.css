@@ -1,0 +1,134 @@
+.filter-container{
+    width: 5cm;
+    margin-top: 1.75cm;
+    position: sticky;
+    top: 1rem;
+    height: 100%;
+}
+.filter-search-input{
+    width: 100%;
+    border: transparent;
+    height: 0.9cm;
+    font-size: 1rem;
+    background-color: rgb(233, 242, 250);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.filter-category{
+text-align: left;
+text-transform: capitalize;
+}
+.filter-header{
+font-size: 1.2rem;
+margin-bottom: 0%;
+color: rgb(54, 50, 66);
+}
+.filter-category-item{
+font-size: 0.4cm;
+margin-top: 0.2cm;
+letter-spacing: 0.5px;
+margin-bottom: 0.2cm;
+color: rgb(90, 83, 109);
+background-color: transparent;
+border: none;
+text-transform: capitalize;
+}
+.filter-category-item:hover{
+    cursor: pointer;
+}
+.filter-company-item{
+    border: none;
+    background-color: rgb(233, 242, 250);
+    height: 0.7cm;
+}
+.colors-container{
+    display: flex;
+    flex-direction: row;
+}
+.all-btn{
+background-color: transparent;
+border: none;
+text-transform: capitalize;
+font-size: 0.43cm;
+color: rgb(90, 83, 109);
+opacity: 0.7;
+}
+.category_active{
+    border: 2px solid rgb(165, 116, 42);
+}
+.filter-color-btn{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: none;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+._active{
+    opacity: 1;
+}
+.filter-price{
+    font-size: 0.45cm;
+    color: rgb(90, 83, 109);
+    margin-bottom: 0%;
+}
+.filter-shipping{
+    font-size: 0.45cm;
+    color: rgb(90, 83, 109);
+}
+.form-control-shipping{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    text-transform: capitalize;
+    column-gap: 0.5rem;
+    margin-top: 0.5cm;
+    font-size: 0.45cm;
+}
+.filter-clear-btn{
+    margin-top: 0.6cm;
+    background-color: rgb(177, 6, 6);
+    color: white;
+    margin-right: auto;
+    border: none;
+    font-size: 0.45cm;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    width: 3.5cm;
+    height: 0.7cm;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+@media (max-width: 900px){
+    .filter-container{
+        position: relative;
+    }
+}
+@media (max-width: 900px){
+    .filter-header{
+        font-size: 1rem;
+        }
+        .all-btn{
+            font-size: 0.4cm;
+            }
+            .filter-color-btn{
+                width: 18px;
+                height: 18px;
+            }
+            .filter-price{
+                font-size: 0.4cm;
+            }
+            .filter-shipping{
+                font-size: 0.4cm;
+            }
+}

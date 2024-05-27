@@ -1,0 +1,23 @@
+.error-background{
+    background-color: rgb(248, 237, 201);
+}
+.error-heading{
+font-size: 3cm;
+margin-top: 5cm;
+margin-bottom: 0;
+}
+.error-text{
+font-size: 0.53cm;
+font-weight: 500;
+}
+.error-button{
+background-color: rgb(201, 156, 60);
+color: white;
+border: none;
+font-size: 0.35cm;
+border-radius: 5px;
+padding: 0.08cm 0.5cm;
+}
+.error-button:hover{
+    color: black;
+}

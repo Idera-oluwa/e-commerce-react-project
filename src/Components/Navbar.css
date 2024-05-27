@@ -1,0 +1,116 @@
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 2cm;
+    background-color: white;
+}
+.first-nav-links{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+    justify-content: center;
+}
+.second-nav-links{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 2cm;
+    font-size: 0.55cm;
+    letter-spacing: 1px;
+    
+}
+.cart{
+    font-weight: 400;
+    color: rgb(29, 2, 73);
+}
+.cart-section-container{
+    margin-right: 0.7cm;
+    display: flex;
+    flex-direction: row;
+}
+.cart-icon-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 0.65cm;
+    height: 0.65cm;
+}
+.cart-count{
+    position: absolute;
+    height: 0.6cm;
+    right: 0; 
+}
+.cart-count-text{
+    margin-bottom: 0.6cm;
+    background-color: rgb(170, 82, 82);
+    color: white;
+    font-size: 13px;
+    /*padding:0.4px 3px;*/
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    left: 0;
+    margin-top: 0.6cm;
+    margin-right: -0.4cm;
+}
+.login{
+    font-weight: 400;
+    color: rgb(28, 2, 70);
+    cursor: pointer;
+}
+.home{
+    font-size: 0.4cm;
+    color: rgb(28, 2, 70);
+}
+.about{
+    font-size: 0.4cm;
+    margin-left: 0.9cm;
+    color: rgb(28, 2, 70);
+}
+.products{
+    font-size: 0.4cm;
+    margin-left: 0.9cm;
+    color: rgb(28, 2, 70);
+}
+.checkout{
+    font-size: 0.5cm;
+    margin-left: 0.9cm;
+    color: rgb(28, 2, 70);
+}
+.link:hover{
+    content: ""; /* This is necessary for the pseudo element to work. */    
+    display: block;  
+    border-bottom: 0.06cm solid goldenrod;
+  }
+.logo{
+    height: 1.35cm;
+    margin-left: 7%;
+}
+.bars-icon{
+    display: none;
+}
+
+@media screen and (max-width:1120px){
+    .first-nav-links{
+        display: none;
+    }
+    .second-nav-links{
+        display: none;
+    }
+    .bars-icon{
+        display: block;
+        margin-left: auto;
+        margin-right: 5%;
+        width: 1cm;
+        height: 1cm;
+        color: rgb(153, 101, 24);
+    }
+}
+@media screen and (max-width:900px){
+    .logo{
+        margin-left:2.5%;
+    }
+}

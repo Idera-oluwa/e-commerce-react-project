@@ -1,0 +1,175 @@
+.cards-total-container{
+    background-color: rgb(228, 215, 195);
+    height: 12cm;
+    width: 100%;
+    padding-top: 1cm;
+}
+.cards-text-container{
+    width: 90vw;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cards-heading{
+    width: 28%;
+    font-size: 0.85cm;
+    letter-spacing: 2px;
+    text-align: left;
+}
+.cards-paragraph{
+width: 50%;
+margin-left: auto;
+font-size: 15px;
+line-height: 1cm;
+text-align: left;
+margin-top: 0.7cm;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5cm;
+}
+.icons{
+    font-size: 0.8cm;
+    padding: 0.4cm;
+    background-color: rgb(228, 215, 195);
+    border-radius: 50%;
+}
+.card-container{
+    background-color: rgb(221, 184, 130);
+    width: 80%;
+    padding:0.7cm 0.7cm;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.card-heading{
+font-size: 23px;
+letter-spacing: 2px;
+}
+.card-text{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+@media screen and (max-width:1350px){
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 96%;
+        margin-top: 1.5cm;
+    }
+    .cards-text-container{
+        width: 96%;
+    }
+    .card-container{
+        width: 85%;
+        margin-bottom: 1.5cm;
+    }
+    .cards-total-container{
+        height: 26cm;
+    }
+   
+}
+@media screen and (max-width:1210px){
+    .cards-heading{
+        width: 36%;
+    }
+}
+@media screen and (max-width:1100px){
+    .cards-heading{
+        width: 40%;
+    }
+    .cards-text-container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .cards-paragraph{
+        width: 100%;
+        margin-right: auto;
+        margin-left: 0%;
+        font-size: 18px;
+        line-height: 1cm;
+        text-align: left;
+        margin-top: 0.3cm;
+        }
+        .cards-total-container{
+            height: 29cm;
+        }
+}
+@media screen and (max-width:950px){
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 95%;
+        margin-top: 1.5cm;
+    }
+    .card-container{
+        width: 90%;
+        margin-bottom: 1.5cm;
+    }
+    .cards-heading{
+        width: 45%;
+        font-size: 0.75cm;
+        line-height: 1cm;
+    }
+    .card-heading{
+        margin-top: 0cm;
+        margin-bottom: 0.25cm;
+    }
+    .card-text{
+        font-size: 15.5px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 0.8cm;
+    }
+    .icons{
+        margin-bottom: 0%;
+    }
+    .card-container{
+        margin-top: 0.5cm;
+        margin-top: 0%;
+        padding:0.4cm 0.5cm;
+    }
+    .cards-total-container{
+        height: 34cm;
+    }
+    .cards-paragraph{
+        font-size: 15.5px;
+        line-height: 0.7cm;
+    }
+}
+@media screen and (max-width:650px){
+.cards-heading{
+    width: 55%;
+}
+.cards-total-container{
+    height: 36cm;
+}
+}
+@media screen and (max-width:500px){
+    .cards-heading{
+        width: 65%;
+        font-size: 0.68cm;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+    }
+    .card-text,.cards-paragraph{
+        font-size: 14px;
+    }
+    .card-heading{
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
